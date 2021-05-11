@@ -9,6 +9,10 @@ import Myserver from '../api/index';
 {{#eleui}}
 import '../utils/compRegister';
 {{/eleui}}
+{{#vuex}}
+import store from '../utils/store'
+{{/vuex}}
+
 Vue.prototype.$http = Myserver;
 
 Vue.use(Router);
@@ -16,6 +20,9 @@ Vue.config.silent = true;
 new Vue({
     el: '#app',
     render: h => h(App),
+    {{#vuex}}
+    store,
+    {{/vuex}}
     router: router,
     mounted() {
         // document.dispatchEvent(new Event('custom-render-trigger'));
