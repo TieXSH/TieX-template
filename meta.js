@@ -5,12 +5,12 @@
 const path = require('path');
 const fs = require('fs');
 
-// const {
-//     sortDependencies,
-//     installDependencies,
-//     runLintFix,
-//     printMessage
-// } = require('./utils');
+const {
+    sortDependencies,
+    installDependencies,
+    runLintFix,
+    printMessage
+} = require('./utils');
 const pkg = require('./package.json');
 
 const templateVersion = pkg.version;
@@ -75,10 +75,10 @@ module.exports = {
         //         }
         //     ]
         // },
-        router: {
+        vuex: {
             when: 'isNotTest',
             type: 'confirm',
-            message: 'Install vue-router?'
+            message: 'Install vuex?'
         },
         eleui: {
             when: 'isNotTest',
@@ -156,29 +156,32 @@ module.exports = {
         '.eslintignore': 'eslint',
         '.stylelintrc.js': 'stylelint',
         '.stylelintignore': 'stylelint',
-        'src/router/**/*': 'router',
-        'src/utils/compRegister.js': 'eleui'
+        'src/utils/store.js': 'vuex',
+        'src/utils/compRegister.js': 'eleui',
     },
     complete: function(data, {chalk}) {
         const green = chalk.green;
         console.log(data);
-        // sortDependencies(data, green);
+        // 1，给依赖排序
+        // 2，是否自动安装
+        sortDependencies(data, green);
 
-        // const cwd = path.join(process.cwd(), data.inPlace ? '' : data.destDirName);
+        const cwd = path.join(process.cwd(), data.inPlace ? '' : data.destDirName);
 
-        // if (data.autoInstall) {
-        //     installDependencies(cwd, data.autoInstall, green)
-        //     .then(() => {
-        //         return runLintFix(cwd, data, green);
-        //     })
-        //     .then(() => {
-        //         printMessage(data, green);
-        //     })
-        //     .catch(e => {
-        //         console.log(chalk.red('Error:'), e);
-        //     });
-        // } else {
-        //     printMessage(data, chalk);
-        // }
+        console.log('cwd', cwd);
+        if (data.autoInstall) {
+            installDependencies(cwd, 'npm', green)
+            .then(() => {
+                return runLintFix(cwd, data, green);
+            })
+            .then(() => {
+                printMessage(data, green);
+            })
+            .catch(e => {
+                console.log(chalk.red('Error:'), e);
+            });
+        } else {
+            printMessage(data, chalk);
+        }
     }
 }
