@@ -57,24 +57,6 @@ module.exports = {
             type: 'string',
             message: 'Author'
         },
-        // build: {
-        //     when: 'isNotTest',
-        //     type: 'list',
-        //     message: 'Vue build',
-        //     choices: [
-        //         {
-        //             name: 'Runtime + Compiler: recommended for most users',
-        //             value: 'standalone',
-        //             short: 'standalone'
-        //         },
-        //         {
-        //             name:
-        //                 'Runtime-only: about 6KB lighter min+gzip, but templates (or any Vue-specific HTML) are ONLY allowed in .vue files - render functions are required elsewhere',
-        //             value: 'runtime',
-        //             short: 'runtime'
-        //         }
-        //     ]
-        // },
         vuex: {
             when: 'isNotTest',
             type: 'confirm',
@@ -95,55 +77,6 @@ module.exports = {
             type: 'confirm',
             message: 'Use baidu stylelint to lint your code?'
         },
-        // lintConfig: {
-        //     when: 'isNotTest && lint',
-        //     type: 'list',
-        //     message: 'Pick an ESLint preset',
-        //     choices: [
-        //         {
-        //             name: 'Standard (https://github.com/standard/standard)',
-        //             value: 'standard',
-        //             short: 'Standard'
-        //         },
-        //         {
-        //             name: 'Airbnb (https://github.com/airbnb/javascript)',
-        //             value: 'airbnb',
-        //             short: 'Airbnb'
-        //         },
-        //         {
-        //             name: 'none (configure it yourself)',
-        //             value: 'none',
-        //             short: 'none'
-        //         }
-        //     ]
-        // },
-        // unit: {
-        //     when: 'isNotTest',
-        //     type: 'confirm',
-        //     message: 'Set up unit tests'
-        // },
-        // runner: {
-        //     when: 'isNotTest && unit',
-        //     type: 'list',
-        //     message: 'Pick a test runner',
-        //     choices: [
-        //         {
-        //             name: 'Jest',
-        //             value: 'jest',
-        //             short: 'jest'
-        //         },
-        //         {
-        //             name: 'Karma and Mocha',
-        //             value: 'karma',
-        //             short: 'karma'
-        //         },
-        //         {
-        //             name: 'none (configure it yourself)',
-        //             value: 'noTest',
-        //             short: 'noTest'
-        //         }
-        //     ]
-        // },
         autoInstall: {
             when: 'isNotTest',
             type: 'confirm',
