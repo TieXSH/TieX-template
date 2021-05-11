@@ -1,0 +1,54 @@
+{
+    "presets": [
+        // ["es2015", { "modules": false }],
+        "@babel/preset-env"
+        // "es2015"
+        // "vue",
+        // "stage-0"
+    ],
+    "plugins": [
+        // "add-module-exports",
+        // "transform-decorators-legacy",
+        // "transform-object-rest-spread",
+        [
+            "@babel/plugin-transform-runtime",
+            {
+                "regenerator": true
+            }
+        ]
+        // [
+        //     "import",
+        //     {
+        //     "libraryName": "antd",
+        //     "libraryDirectory": "es",
+        //     "style": true
+        //     }
+        // ],
+        // [
+        //     "import",
+        //     {
+        //     "libraryName": "lodash",
+        //     "libraryDirectory": ""
+        //     }
+        // ],
+        // [
+        //     "component",
+        //     {
+        //       "libraryName": "element-ui",
+        //       "styleLibraryName": "theme-chalk"
+        //     }
+        // ]
+    ],
+    "ignore": [
+        "node_modules",
+        "smartapp-automator",
+        "assets",
+        "view",
+        "public",
+        "test",
+        "spec",
+        "logs",
+        "lib/jasmine_examples",
+        "db"
+    ]
+}

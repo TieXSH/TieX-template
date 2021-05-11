@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    /* 可拖拽 */
+    -webkit-app-region: drag;
+}
+
+#check {
+    display: none;
+}
+
+.mobile_nav {
+    display: none;
+}
+
+.content .card p {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    opacity: .8;
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 780px) {
+    .sidebar {
+        display: none;
+    }
+
+    #sidebar_btn {
+        display: none;
+    }
+
+    .content {
+        margin-left: 0;
+        margin-top: 0;
+        padding: 10px 20px;
+        transition: 0s;
+    }
+
+    #check:checked ~ .content {
+        margin-left: 0;
+    }
+
+    .active {
+        display: block;
+    }
+}

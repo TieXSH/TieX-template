@@ -1,0 +1,19 @@
+{
+  "name": "tiex-vue-template",
+  "version": "1.0.0",
+  "description": "vue template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangshuchen/tieX-vue-template.git"
+  },
+  "author": "zhangshuchen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangshuchen/tieX-vue-template/issues"
+  },
+  "homepage": "https://github.com/zhangshuchen/tieX-vue-template#readme"
+}

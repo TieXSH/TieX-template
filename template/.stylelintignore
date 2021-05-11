@@ -1,0 +1,59 @@
+# Ignore other environment document
+# .stylelintignore
+# 旧的不需打包的样式库
+*.min.css
+
+# 其他类型文件
+*.js
+*.jpg
+*.png
+*.eot
+*.ttf
+*.woff
+*.json
+
+# 测试和打包目录
+/test/
+/dist/
+# other/**/*.css
+
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/bench/wikipedia.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/docs/apidoc/epydoc.css
+#other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/*.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/atgroup_01.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/atgroup_02.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/atgroup_03.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/atgroup_04.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/atgroup_05.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/atgroup_06.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/atgroup_07.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/atgroup_08.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/atgroup_09.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/atgroup_10.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/atgroup_11.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/comment_00.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/comment_03.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/comment_04.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/escape_00.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/escape_01.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/yui/*.css
+other/mac/platform-tools/systrace/catapult/third_party/polymer/components/core-tooltip/core-tooltip.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rjsmin/docs/apidoc/epydoc.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/url_09.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/escape_02.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/escape_06.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/escape_05.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/escape_04.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/escape_03.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/url_08.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/url_07.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/url_06.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/url_05.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/url_04.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/url_03.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/url_02.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/url_01.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/url_00.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/first_01.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/first_02.css
+other/mac/platform-tools/systrace/catapult/common/py_vulcanize/third_party/rcssmin/tests/main/first_00.css
